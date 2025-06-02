@@ -43,7 +43,7 @@ COPY grafana/provisioning/dashboards/default.yml /etc/grafana/provisioning/dashb
 COPY grafana/provisioning/datasources/datasource.yml /etc/grafana/provisioning/datasources/
 COPY grafana/dashboards/fastapi_metrics_dashboard.json /var/lib/grafana/dashboards/
 COPY grafana/grafana.ini /etc/grafana/grafana.ini
-COPY prometheus.yml /etc/prometheus/prometheus.yml
+COPY prometheus/prometheus.yml /etc/prometheus/prometheus.yml
 
 # Expose Prometheus and Grafana ports
 EXPOSE 9090 3000
